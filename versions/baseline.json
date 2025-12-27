@@ -5746,7 +5746,7 @@
     },
     "libwandio": {
       "baseline": "4.2.6-1",
-      "port-version": 0
+      "port-version": 1
     },
     "libwebm": {
       "baseline": "1.0.0.32",
