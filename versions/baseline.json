@@ -8862,7 +8862,7 @@
     },
     "scotch": {
       "baseline": "7.0.5",
-      "port-version": 1
+      "port-version": 2
     },
     "scottt-debugbreak": {
       "baseline": "1.0",
