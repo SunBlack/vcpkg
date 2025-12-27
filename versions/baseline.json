@@ -10754,7 +10754,7 @@
     },
     "xcb": {
       "baseline": "1.14",
-      "port-version": 3
+      "port-version": 4
     },
     "xcb-image": {
       "baseline": "0.4.1",
