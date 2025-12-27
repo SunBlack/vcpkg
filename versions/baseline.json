@@ -7862,7 +7862,7 @@
     },
     "pthread-stubs": {
       "baseline": "0.5",
-      "port-version": 0
+      "port-version": 1
     },
     "pthreadpool": {
       "baseline": "2024-11-04",
