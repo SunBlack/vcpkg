@@ -1,0 +1,25 @@
+diff --git a/configure.ac b/configure.ac
+index 082783a..11fc4cb 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -97,11 +97,15 @@ AC_ARG_ENABLE([bz2],
+ 
+ if test "$enable_bz2" != no; then
+   bz2_devel=ok
+-  AC_CHECK_LIB([bz2], [BZ2_bzBuffToBuffCompress], [
+-	LIBS="-lbz2 $LIBS"
+-	AC_DEFINE([HAVE_LIBBZ2],1,[Define to 1 if you have the libbz2 library.])], [bz2_devel=missing])
+-  if test "$bz2_devel" != "ok"; then
+-    AC_MSG_ERROR([libbzip2 development files not found.
++  AC_CHECK_HEADERS([bzlib.h], [], [
++    AC_MSG_ERROR([bzlib.h not found])
++  ])
++
++  AC_SEARCH_LIBS([BZ2_bzBuffToBuffCompress], [bz2], [
++    AC_DEFINE([HAVE_LIBBZ2],1)
++  ], [
++    AC_MSG_ERROR([libbzip2 development files not found.])
++  ])
+ 
+ This is needed for some options of the arithmetic coder.  It can be disabled
+ with configure --disable-bz2, but be aware some data streams will become
