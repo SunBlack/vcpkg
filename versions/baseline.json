@@ -210,7 +210,7 @@
     },
     "apriltag": {
       "baseline": "3.4.5",
-      "port-version": 0
+      "port-version": 1
     },
     "apsi": {
       "baseline": "0.11.0",
@@ -1590,7 +1590,7 @@
     },
     "cairo": {
       "baseline": "1.18.4",
-      "port-version": 1
+      "port-version": 2
     },
     "cairomm": {
       "baseline": "1.18.0",
@@ -1686,7 +1686,7 @@
     },
     "cfitsio": {
       "baseline": "4.6.4",
-      "port-version": 0
+      "port-version": 1
     },
     "cgal": {
       "baseline": "6.2",
@@ -1778,7 +1778,7 @@
     },
     "clamav": {
       "baseline": "0.103.11",
-      "port-version": 0
+      "port-version": 1
     },
     "clap-cleveraudio": {
       "baseline": "1.2.9",
@@ -3134,7 +3134,7 @@
     },
     "flint": {
       "baseline": "3.6.0",
-      "port-version": 0
+      "port-version": 1
     },
     "fltk": {
       "baseline": "1.3.11",
@@ -3790,7 +3790,7 @@
     },
     "hdf5": {
       "baseline": "2.1.1",
-      "port-version": 1
+      "port-version": 2
     },
     "hdr-histogram": {
       "baseline": "0.11.10",
@@ -5650,7 +5650,7 @@
     },
     "libshout": {
       "baseline": "2.4.6",
-      "port-version": 0
+      "port-version": 1
     },
     "libsigcpp": {
       "baseline": "3.8.1",
@@ -5846,7 +5846,7 @@
     },
     "libupnp": {
       "baseline": "1.18.5",
-      "port-version": 0
+      "port-version": 1
     },
     "liburcu": {
       "baseline": "0.15.6",
@@ -5922,7 +5922,7 @@
     },
     "libwandio": {
       "baseline": "4.2.7-1",
-      "port-version": 0
+      "port-version": 1
     },
     "libwebm": {
       "baseline": "1.0.0.32",
@@ -5934,7 +5934,7 @@
     },
     "libwebsockets": {
       "baseline": "4.5.8",
-      "port-version": 0
+      "port-version": 1
     },
     "libx11": {
       "baseline": "1.8.1",
@@ -6474,7 +6474,7 @@
     },
     "mbedtls": {
       "baseline": "3.6.5",
-      "port-version": 0
+      "port-version": 1
     },
     "mcap": {
       "baseline": "2.1.3",
@@ -6722,7 +6722,7 @@
     },
     "mosquitto": {
       "baseline": "2.0.22",
-      "port-version": 1
+      "port-version": 2
     },
     "mp-units": {
       "baseline": "2.5.0",
@@ -7362,7 +7362,7 @@
     },
     "openblas": {
       "baseline": "0.3.33",
-      "port-version": 0
+      "port-version": 1
     },
     "opencascade": {
       "baseline": "8.0.0",
@@ -7478,7 +7478,7 @@
     },
     "openscap": {
       "baseline": "1.4.2",
-      "port-version": 0
+      "port-version": 1
     },
     "openslide": {
       "baseline": "4.0.1",
@@ -7810,7 +7810,7 @@
     },
     "pixman": {
       "baseline": "0.46.4",
-      "port-version": 1
+      "port-version": 2
     },
     "pkgconf": {
       "baseline": "2.5.1",
@@ -8078,15 +8078,19 @@
     },
     "pthread-stubs": {
       "baseline": "0.5",
-      "port-version": 1
+      "port-version": 2
     },
     "pthreadpool": {
       "baseline": "2024-11-04",
       "port-version": 2
     },
     "pthreads": {
+      "baseline": "deprecated",
+      "port-version": 0
+    },
+    "pthreads4w": {
       "baseline": "3.0.0",
-      "port-version": 14
+      "port-version": 0
     },
     "ptyqt": {
       "baseline": "0.7.1",
@@ -8970,7 +8974,7 @@
     },
     "rtlsdr": {
       "baseline": "2.0.2",
-      "port-version": 0
+      "port-version": 1
     },
     "rtmfp-cpp": {
       "baseline": "1.7.0",
@@ -9098,7 +9102,7 @@
     },
     "scotch": {
       "baseline": "7.0.5",
-      "port-version": 1
+      "port-version": 2
     },
     "scottt-debugbreak": {
       "baseline": "1.0",
@@ -9722,7 +9726,7 @@
     },
     "starlink-ast": {
       "baseline": "9.2.12",
-      "port-version": 0
+      "port-version": 1
     },
     "staticjson": {
       "baseline": "1.0.0",
@@ -10302,7 +10306,7 @@
     },
     "tracy": {
       "baseline": "0.13.1",
-      "port-version": 0
+      "port-version": 1
     },
     "transwarp": {
       "baseline": "2.2.3",
@@ -10494,7 +10498,7 @@
     },
     "usbmuxd": {
       "baseline": "2023-07-21",
-      "port-version": 1
+      "port-version": 2
     },
     "usd": {
       "baseline": "26.5",
@@ -10558,7 +10562,7 @@
     },
     "v8": {
       "baseline": "9.1.269.39",
-      "port-version": 8
+      "port-version": 9
     },
     "valijson": {
       "baseline": "1.1.1",

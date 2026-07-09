@@ -6,7 +6,6 @@
   "homepage": "https://www.gnu.org/software/osip/",
   "supports": "!(windows & arm) & !uwp",
   "dependencies": [
-    "pthread",
     {
       "name": "vcpkg-make",
       "host": true,

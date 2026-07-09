@@ -22,10 +22,6 @@
       "platform": "!osx & !windows"
     },
     {
-      "name": "pthread",
-      "platform": "!emscripten & !windows"
-    },
-    {
       "name": "vcpkg-tool-meson",
       "host": true
     }

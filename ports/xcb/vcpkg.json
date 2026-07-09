@@ -17,7 +17,6 @@
         "tools"
       ]
     },
-    "pthread",
     "pthread-stubs",
     {
       "name": "vcpkg-make",
