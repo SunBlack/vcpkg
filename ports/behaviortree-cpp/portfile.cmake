@@ -43,6 +43,11 @@ vcpkg_cmake_config_fixup(CONFIG_PATH lib/cmake/behaviortree_cpp PACKAGE_NAME beh
 vcpkg_copy_pdbs()
 
 vcpkg_install_copyright(
+    COMMENT [[
+The installed headers contain embedded copies of the following libraries:
+- linb::any and expected-lite, licensed under BSL-1.0. Copyright notices are retained in the headers; see https://www.boost.org/LICENSE_1_0.txt.
+- nlohmann/json and magic_enum, licensed under MIT. Copyright and SPDX notices are retained in the headers.
+]]
     FILE_LIST
         "${SOURCE_PATH}/LICENSE"
         "${SOURCE_PATH}/3rdparty/minicoro/LICENSE"
