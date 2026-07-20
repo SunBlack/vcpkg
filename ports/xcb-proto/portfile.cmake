@@ -29,7 +29,7 @@ vcpkg_from_gitlab(
     SHA512   69ac318e19c6a08d50624867b44f43c7cab7eb8e610635376b91b1b15c19a681bef246254565b920a26166726d501a2042fdc52c5ba37a509814cd5c766211e4
     HEAD_REF master
     PATCHES
-        pkgconf.patch # Revert changed pkgconf output dir (changed in 1.15.2)
+        pkgconf.patch # vcpkg-make namespaces datarootdir below share/${PORT}
 )
 
 set(ENV{ACLOCAL} "aclocal -I \"${CURRENT_INSTALLED_DIR}/share/xorg/aclocal/\"")
