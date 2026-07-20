@@ -49,4 +49,7 @@ vcpkg_fixup_pkgconfig()
 
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug")
 
-vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/COPYING")
+vcpkg_install_copyright(
+    FILE_LIST "${SOURCE_PATH}/COPYING"
+    COMMENT "The installed protocol XML files also contain MIT and MIT-open-group license notices."
+)
