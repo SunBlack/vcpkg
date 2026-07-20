@@ -34,18 +34,19 @@ vcpkg_from_gitlab(
 
 set(ENV{ACLOCAL} "aclocal -I \"${CURRENT_INSTALLED_DIR}/share/xorg/aclocal/\"")
 
+set(XCBGEN_INSTALL_DIR "tools/${PORT}")
 vcpkg_make_configure(
     SOURCE_PATH "${SOURCE_PATH}"
     AUTORECONF
     OPTIONS
         ac_cv_path_PYTHON='${PYTHON3}'
-        am_cv_python_pyexecdir=\\\${prefix}/${PYTHON3_SITE}
-        am_cv_python_pythondir=\\\${prefix}/${PYTHON3_SITE}
+        am_cv_python_pyexecdir=\\\${prefix}/${XCBGEN_INSTALL_DIR}
+        am_cv_python_pythondir=\\\${prefix}/${XCBGEN_INSTALL_DIR}
 )
 
 vcpkg_make_install()
 vcpkg_fixup_pkgconfig()
 
-file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/share")
+file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug")
 
 vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/COPYING")
