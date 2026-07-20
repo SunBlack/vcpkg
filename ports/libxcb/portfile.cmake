@@ -19,8 +19,12 @@ vcpkg_from_gitlab(
 )
 
 set(ENV{ACLOCAL} "aclocal -I \"${CURRENT_INSTALLED_DIR}/share/xorg/aclocal/\"")
+set(OPTIONS
+    --disable-devel-docs
+    --without-doxygen
+)
 if(VCPKG_TARGET_IS_WINDOWS)
-    set(OPTIONS --disable-dependency-tracking)
+    list(APPEND OPTIONS --disable-dependency-tracking)
 endif()
 
 vcpkg_find_acquire_program(PYTHON3)
