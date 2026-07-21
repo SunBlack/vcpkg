@@ -13,10 +13,10 @@ vcpkg_from_gitlab(
     HEAD_REF master
     PATCHES
         makefile.patch # without the patch target xproto.c is missing target XCBPROTO_XCBINCLUDEDIR
-        configure.patch 
+        configure.patch
         use_xwindows_includes.patch # use the X11 include wrappers for windows headers
         getpid_include.patch # add include for getpid on windows
-) 
+)
 
 set(ENV{ACLOCAL} "aclocal -I \"${CURRENT_INSTALLED_DIR}/share/xorg/aclocal/\"")
 if(VCPKG_TARGET_IS_WINDOWS)
@@ -60,8 +60,8 @@ file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/share")
 vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/COPYING")
 
 if(VCPKG_TARGET_IS_WINDOWS AND VCPKG_LIBRARY_LINKAGE STREQUAL "dynamic" AND NOT VCPKG_TARGET_IS_MINGW)
-    set(extensions 
-            bigreq 
+    set(extensions
+            bigreq
             composite
             damage
             dpms
