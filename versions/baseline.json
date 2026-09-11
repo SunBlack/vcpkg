@@ -6677,7 +6677,7 @@
       "port-version": 0
     },
     "minio-cpp": {
-      "baseline": "0.4.0",
+      "baseline": "1.0.0",
       "port-version": 0
     },
     "miniply": {
