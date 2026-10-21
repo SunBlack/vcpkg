@@ -25,6 +25,7 @@ PORT_LIST = [
     "kcodecs",
     "kconfig",
     "kcoreaddons",
+    "kcompletion",
     "kcrash",
     "kdbusaddons",
     "kf6-solid",
