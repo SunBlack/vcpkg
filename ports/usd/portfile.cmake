@@ -20,7 +20,7 @@ vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO PixarAnimationStudios/OpenUSD
     REF "v${USD_VERSION}"
-    SHA512 82f7bb4f77b295be79cd36f591f242276d36c0d589b0fca383344c27e70daf7e29151bf587528bb2fc2b2a8b974387a253993ace3caf5f79ae70f9ebbc71cf1a
+    SHA512 515911bb5dcd18511115855ba10dc0578cfd2104e124bd838c9cb5727901d1188ed5ee215ac9e5a47cfef62a178aeb6972e6a7e3d15bb9d166454830e8ddcca0
     HEAD_REF release
     PATCHES
         003-fix-dep.patch
