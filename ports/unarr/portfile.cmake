@@ -2,7 +2,7 @@ vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO selmf/unarr
     REF "v${VERSION}"
-    SHA512 da170e0391fbe92e9b2474beb6be9a96c9f905e4e572235aa839cda3f6faf3cb99773eede34e1054138a4997bf68a18ee84f4df47add202355449634c0fd6d93
+    SHA512 84cf296ee3bdcfa4c57db2491af37a2b76065d2eb5a898047e07cde27186bdb2ec8a9d5705167582301dcd69ef458c9e458b399642020205dc31b360a95f13ea
     HEAD_REF master
     PATCHES
         debundle-7zip.patch
