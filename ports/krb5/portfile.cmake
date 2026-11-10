@@ -120,4 +120,14 @@ if(VCPKG_BUILD_TYPE)
   file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug")
 endif()
 
-vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/NOTICE")
+# These license variants are used by compiled code but omitted from NOTICE.
+vcpkg_install_copyright(
+    COMMENT [[
+LicenseRef-Kerberos-MIT-Export-Modify: copyright.h
+LicenseRef-Kerberos-SIPB-Modify: mit-sipb-copyright.h
+LicenseRef-scancode-michigan-disclaimer: NOTICE, University of Michigan section]]
+    FILE_LIST
+        "${SOURCE_PATH}/NOTICE"
+        "${SOURCE_PATH}/src/include/copyright.h"
+        "${SOURCE_PATH}/src/util/et/mit-sipb-copyright.h"
+)
